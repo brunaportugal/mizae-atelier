@@ -5,5 +5,6 @@ class CollectionsController < ApplicationController
 
   def show
     @collection = Collection.find(params[:id])
+    @products = Product.where(params[:colletion_id])
   end
 end

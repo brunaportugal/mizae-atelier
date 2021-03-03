@@ -1,0 +1,9 @@
+<div>
+  <div class="ml-5 mt-5">
+    <% @collections.each do |collection| %>
+      <h2>
+        <%= link_to collection.name, collection_path(collection) %>
+      </h2>
+    <% end %>
+  </div>
+</div>
